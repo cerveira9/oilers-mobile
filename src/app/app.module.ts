@@ -10,7 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ChamadaPage } from '../pages/chamada/chamada';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +18,7 @@ import { ChamadaPage } from '../pages/chamada/chamada';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    ChamadaPage
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -31,8 +30,7 @@ import { ChamadaPage } from '../pages/chamada/chamada';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    ChamadaPage
+    TabsPage
   ],
   providers: [
     StatusBar,
