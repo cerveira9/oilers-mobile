@@ -10,7 +10,12 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  
-  
+  navigateToAnotherModule(){
+    this.navCtrl.push('ChamadaPage');
+    console.log('Other');
+  }
 
+  navigateToSameModule(){
+    console.log('Same')
+  }
 }
