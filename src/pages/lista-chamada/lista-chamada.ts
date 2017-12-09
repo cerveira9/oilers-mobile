@@ -9,7 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 
 @IonicPage({
-  name: 'listaChamada-page'
+  name: 'listaChamada'
 })
 @Component({
   selector: 'page-lista-chamada',
