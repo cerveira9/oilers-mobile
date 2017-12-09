@@ -10,11 +10,11 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  navigateToAnotherModule(){
+  AnotherModule(){
     this.navCtrl.push('ChamadaPage');
   }
 
-  navigateToSameModule(){
-    this.navCtrl.push('listaChamada-page');
+  SameModule(){
+    this.navCtrl.push('listaChamada');
   }
 }
