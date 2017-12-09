@@ -12,10 +12,9 @@ export class HomePage {
   }
   navigateToAnotherModule(){
     this.navCtrl.push('ChamadaPage');
-    console.log('Other');
   }
 
   navigateToSameModule(){
-    console.log('Same')
+    this.navCtrl.push('listaChamada-page');
   }
 }
