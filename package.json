@@ -5,6 +5,7 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
+    "start": "service-worker.js",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
@@ -28,7 +29,9 @@
     "ionicons": "3.0.0",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.18",
+    "express": "~4.16.2",
+    "ejs": "^2.5.7"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.5",
