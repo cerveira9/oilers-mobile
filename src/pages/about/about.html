@@ -7,5 +7,97 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-card>
+    
+      <ion-card-header>
+        <div class="img-oilers-about">
+          <img src="assets/imgs/LogoOilers.png" />
+        </div>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <div class="text-oilers-info">
+          Fundado no final de 2013, conquistou seu primeiro título em 2015. Logo em seguida, em 2016,
+           sagrou-se bicampeão estadual sendo o primeiro time a ganhar um campeonato na modalidade Full Pads 
+           no estado do Rio de Janeiro.
+        </div>
+      </ion-card-content>
+    
+    </ion-card>
 
+    <div padding>
+        <ion-segment [(ngModel)]="pessoas">
+          <ion-segment-button value="diretoria">
+            Diretoria
+          </ion-segment-button>
+          <ion-segment-button value="ct">
+              C. Técnica
+            </ion-segment-button>
+          <ion-segment-button value="jogadores">
+            Jogadores
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="pessoas">
+        <ion-list *ngSwitchCase="'diretoria'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="assets/imgs/diretores/Presidente_Nivaldo.jpg">
+            </ion-thumbnail>
+            <h1><strong>PRESIDENTE</strong></h1>
+            <h2>Nivaldo Valadão</h2>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/diretores/VicePresidente_Ruann.jpeg">
+              </ion-thumbnail>
+              <h1><strong>VICE PRESIDENTE</strong></h1>
+              <h2>Ruann Carlos</h2>
+            </ion-item>
+            
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'ct'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/ct/HC_Vovo.jpg">
+              </ion-thumbnail>
+              <h1><strong>HEAD COACH</strong></h1>
+              <h2>Thiago "Vovô" Werneck</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/imgs/ct/OC_Bruno.jpg">
+                </ion-thumbnail>
+                <h1><strong>COORDENADOR OFENSIVO</strong></h1>
+                <h2>Bruno Oliveira</h2>
+              </ion-item>
+              
+          </ion-list>
+      
+        <ion-list *ngSwitchCase="'jogadores'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="assets/imgs/jogadores/QuarterBack_Gabriel.jpg">
+            </ion-thumbnail>
+            <h1><strong>QUARTER BACK</strong></h1>
+            <h2>Gabriel Lázaro / #10</h2>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/jogadores/RB_Junior.jpg">
+              </ion-thumbnail>
+              <h1><strong>RUNNING BACK</strong></h1>
+              <h2>Júnior Lima / #35</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="assets/imgs/jogadores/WR_Muriel.jpg">
+                </ion-thumbnail>
+                <h1><strong>WIDE RECEIVER</strong></h1>
+                <h2>Muriel Fernandes / #82</h2>
+              </ion-item>
+        </ion-list>
+      </div>
 </ion-content>
