@@ -2,26 +2,26 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ListaChamadaPage page.
+ * Generated class for the ListaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-  name: 'listaChamada'
+  name: 'lista-page'
 })
 @Component({
-  selector: 'page-lista-chamada',
-  templateUrl: 'lista-chamada.html',
+  selector: 'page-lista',
+  templateUrl: 'lista.html',
 })
-export class ListaChamadaPage {
+export class ListaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListaChamadaPage');
+    console.log('ionViewDidLoad ListaPage');
   }
 
 }
