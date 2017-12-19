@@ -26,6 +26,8 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-
+  Login(){
+    this.navCtrl.push('ct-page');
+  }
 
 }
