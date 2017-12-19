@@ -5,10 +5,12 @@
 </ion-header>
 
 <ion-content padding class="body-home">
-    <div class="img-oilers-home">
-        <img src="assets/imgs/LogoOilers.png" />
-    </div>
+  <div class="img-oilers-home">
+    <img src="assets/imgs/LogoOilers.png" />
+  </div>
+  <div class="button-center-container">
     <button ion-button round class="button-home-1" (click)="anotherModule()">Fazer Chamada</button>
     <button ion-button round class="button-home-2" (click)="sameModule()">Lista de Chamada</button>
-    <button ion-button round class="button-home-2">Sair</button>
+    <button ion-button round class="button-home-2" navPop>Sair</button>
+  </div>
 </ion-content>

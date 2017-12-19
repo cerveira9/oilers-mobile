@@ -30,4 +30,5 @@ export class CtPage {
   sameModule() {
     this.navCtrl.push('lista-page');
   }
+  
 }
