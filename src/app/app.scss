@@ -19,7 +19,8 @@
 }
 
 .img-oilers-home{
-    margin:0 auto;
+    display: block;
+    margin: auto;
 }
 
 .button-home-1{
@@ -45,4 +46,8 @@
 .text-oilers-info{
     text-align: justify;
     text-indent: 35px;
+}
+
+.home-text{
+    text-align: center;
 }
