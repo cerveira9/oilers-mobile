@@ -15,6 +15,10 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .body-home{
+    background-color: white;
+}
+
+.ct-body-login{
     background-color: black;
 }
 
@@ -52,5 +56,21 @@
 
 .home-text{
     text-align: center;
+}
+
+.input-login{
+    background-color: black;
     color: white;
+}
+
+.ion-item-login{
+    background-color: black;
+}
+
+.label-login{
+    color: white;
+}
+
+.button-center-container{
+    text-align: center;
 }
