@@ -15,12 +15,14 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .body-home{
-    background-color: white;
+    background-color: black;
 }
 
 .img-oilers-home{
     display: block;
     margin: auto;
+    width: 300px;
+    height: 300px;
 }
 
 .button-home-1{
@@ -50,4 +52,5 @@
 
 .home-text{
     text-align: center;
+    color: white;
 }
