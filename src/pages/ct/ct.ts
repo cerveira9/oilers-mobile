@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the CtPage page.
  *
@@ -30,5 +31,5 @@ export class CtPage {
   sameModule() {
     this.navCtrl.push('lista-page');
   }
-  
+ 
 }

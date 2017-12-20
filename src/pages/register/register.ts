@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
 
 
+
 /**
  * Generated class for the RegisterPage page.
  *
@@ -28,4 +29,8 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
 
+  register(){
+    
+
+  }
 }

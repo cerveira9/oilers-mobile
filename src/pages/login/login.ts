@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { User } from '../../models/user';
+
 
 /**
  * Generated class for the LoginPage page.
@@ -18,7 +19,8 @@ export class LoginPage {
 
   user = {} as User;
 
-  constructor(
+  constructor(private alertCtrl: AlertController,
+    
     public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -26,8 +28,25 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  Login(){
-    this.navCtrl.push('ct-page');
+  alert(message: string) {
+    this.alertCtrl.create({
+      title: 'AVISO!',
+      subTitle: message,
+      buttons: ['OK']
+    }).present();
   }
 
+  Login(user: User){
+    if (this.user.email == 'presidencia' && this.user.password == 'Chefao') {
+      this.navCtrl.push('ct-page');
+    } else if (this.user.email == 'ct' && this.user.password == 'ComissaoT') {
+      this.navCtrl.push('ct-page');
+
+    } else {
+      this.alert('Login ou Senha errados! Tente novamente.');
+    }
+    
+  }
+
+  
 }
